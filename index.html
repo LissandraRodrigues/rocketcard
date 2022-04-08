@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Rocketcard </title>
+</head>
+<body>
+
+    <section>
+
+        <p> Compartilhe seu #rocketcard </p>
+
+        <div class="github-info" id="github-info">
+
+            <div class="card-main">
+
+                <div class="user">
+                    <img src="./assets/logo-rocketseat.png" alt="Rocketseat">
+                    <h2> LissandraRodrigues </h2>
+                </div>
+
+                <div class="infos">
+
+                    <div>
+                        <img src="./assets/people.png" alt="Followers">
+                        <p> 716 Seguidores </p>
+                    </div>
+                    <div>
+                        <img src="./assets/people.png" alt="Following">
+                        <p> 193 Seguindo </p>
+                    </div>
+                    <div>
+                        <img src="./assets/repository.png" alt="Repository">
+                        <p> 38 Repositórios </p>
+                    </div>
+                    <div>
+                        <img src="./assets/company.png" alt="Company">
+                        <p> @Unemployed </p>
+                    </div>
+                    <div>
+                        <img src="./assets/location.png" alt="Location">
+                        <p> Rio de Janeiro </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-footer">
+                <img class="profile-photo" src="https://avatars.githubusercontent.com/u/34509117?v=4" alt="Profile Photo">
+                <img class="rocketcard" src="./assets/rocketcard.png" alt="Rocketcard">
+            </div>
+            
+        </div>
+        
+    </section>
+    
+    <section>
+
+        <p> Customizar Rocketcard </p>
+
+        <button onclick="changeBackground()"> Gerar background </button>
+
+    </section>
+
+</body>
+
+<script>
+
+    function changeBackground(){
+        document.getElementById('github-info').style.borderColor =  '#' + parseInt((Math.random() * 0xFFF)).toString(16).padStart(3, '0'); 
+    }
+
+</script>
+
+</html>

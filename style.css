@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --bg: #0E1218;
+    --bg-card: #0E1218;
+    --bg-button: #000;
+    --bg-border: #1A1A1A;
+    --text: #F1F1F1;
+    --img-profile: #8257e5;
+    --buttons: #FFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:first-child {
+    height: 80%;
+}
+
+.github-info {
+    height: 100%;
+    background-color: var(--bg-card);
+    border: 20px solid var(--bg-button);
+    border-top: 30px solid var(--bg-button);
+    border-bottom:30px solid var(--bg-button);
+    border-radius: 50px;
+    width: 450px;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px 280px 35px;
+}
+
+.user h2 {
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+    border-radius: 50px;
+    width: 160px;
+    height: 200px;
+    padding: 30px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.12), rgba(0,0,0,0.32),  rgba(0,0,0,0.52),  rgba(0,0,0,0.72))}
+
+.infos div {
+    display: flex;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.infos div img {
+    margin-right: 10px;
+}
+
+section + section {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section p:first-child {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+button {
+    width: 250px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: var(--bg-button);
+    color: var(--buttons);
+    font-size: 15px;
+    border: 2px solid var(--bg-border);
+}
+
+button:hover {
+    border-color: var(--img-profile);
+}
+
+/* .card-main {
+    position: absolute;
+    z-index: 1;
+}
+
+.card-footer {
+    position: absolute;
+    z-index: 0;
+} */
+
+/* .profile-photo {
+    position: absolute;
+    border-radius: 50%;
+    width: 370px;
+    top: 30vh;
+    left: 25vw;
+    border: 10px solid var(--img-profile);
+    object-fit: contain;
+}
+
+.rocketcard {
+    position: absolute;
+    top: 73vh;
+    left: 25vw;
+} */
